@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>DST Ubahn-Challenge</title>
+
+
+
+</head>
+
+<body>
+
+
+
+  <section id="title">
+
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <a class="navbar-brand" href="">DST Ubahn-Challenge</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="DST_Projekt.html">Sourcecode</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="final_dataframe.csv">Data Frame</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Bilder_final">Images</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+  </section>
+
+
+
+
+	<div class="container-fluid">
+
+		<div class="intro-box">
+
+			<div class="intro">
+
+				<section id="introduction">
+				  <h2>Einführung</h2>
+				  <p>Die Berliner U-Bahn ist nicht nur ein wichtiges Transportmittel im öffentlichen Personennahverkehr, sondern besticht auch mit einer Vielfalt an farbenfrohen Bahnhöfen.
+					Wer eine Tour durch das Berliner U-Bahnnetz macht, wird Bahnhöfen in allen Farben des Regenbogens und aus unterschiedlichsten Jahrzehnten begegnen.</p>
+				  <p>All diejenigen, für die derzeit jedoch keine Besichtigung vor Ort möglich ist, können nun trotzdem auf ihre Kosten kommen. Eine spielerische Einführung in die farbliche Gestaltung der Berliner U-Bahnhöfe
+					bietet das folgende App-Mockup. Für tiefere Einblicke schließt sich eine Erläuterung zur farblichen Auswertung der Berliner U-Bahnhöfe an. Und jene, die es ganz genau wissen möchten, können am Ende noch einen Blick auf die verwendeten Fotos, die gewonnenen Daten und den Sourcecode werfen.</p>
+				</section>
+			</div>
+		</div>
+
+
+		<div class="mockup-box">
+
+		<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width=100% height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQ3ibDbWdZfWYcwYfaqS5Qr%2FUbahnprojekt%3Fnode-id%3D2%253A4%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D2%253A4%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+
+
+		</div>
+
+
+
+
+
+
+	</div>
+
+  <section id="analyse">
+    <div class="container-fluid">
+
+		<div class="tcount-box">
+			<div class="tcount">
+
+			  <h2>Farbanalyse</h2>
+			  <p>	Farbbilder enthalten für jeden Pixel des Bildes drei Werte, jeweils einen für Rot, Grün und Blau (RGB). Aus diesen Grundfarben setzt sich der Farbraum im digitalen Bereich zusammen. Die Werte können dabei Ganzzahlen im Bereich von 0 bis 255
+					annehmen. Durch additive Farbmischung können somit mehrere <a href="https://de.wikipedia.org/wiki/RGB-Farbraum">Millionen Farben</a> dargestellt werden. Um den mittleren Farbwert zu bestimmen, werden die Daten der Bilder zunächst eingelesen.
+					Anschließend kann der Mittelwert für jede der drei Dimensionen (RGB) gebildet werden.
+					<br><br>
+					Die Auswahl der Bilder erfolgte dabei unter der Maßgabe, ein möglichst allgemeingültiges Ergebnis zu erhalten. Deshalb wurden, sofern möglich, für alle U-Bahnstationen Frontalaufnahmen der Stationsnamen verwendet. Weiterhin wurden die Bilder
+					vereinzelt bearbeitet. Beispielsweise wurden störende Elemente, die nicht zum Design des Bahnhofs gehören, herausgeschnitten oder die Helligkeitswerte angepasst. Bei einem Blick auf das U-Bahnnetz wird klar, dass eine Station häufig von
+					unterschiedlichen U-Bahnlinien angefahren wird. Unterscheiden sich die Stationen in ihrem Design für verschiedene Linien nicht, wurde nur ein Bild verwendet. Gibt es für einen Bahnhof dagegen verschiedene Designs, wurden mehrere Bilder für
+					eine Station gewählt. Das trifft beispielsweise auf die Möckernbrücke oder den Alexanderplatz zu. Somit wurden 169 Bilder ausgewählt, die im Folgenden analysiert werden. Angewandt auf alle Bilder ergibt sich folgende Verteilung der mittleren
+					Grundfarbwerte.
+			 </p>
+			</div>
+		</div>
+
+		<div class="count-box">
+			<div class="count">
+				<img class="img-plot" src="boxplot_rgb.jpg" alt="boxplot_rgb">
+
+			</div>
+		</div>
+
+		<div class="tboxplot-box">
+			<div class="tboxplot">
+			   <h2>Clustering</h2>
+					<p>Bevor die U-Bahnhöfe nach ihren mittleren Farbwerten geclustert werden können, stellt sich zunächst die Frage, wie viele Cluster es geben soll. Für das Clustering wird der unsupervised machine learning Algorithmus <a
+					  href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html">K-Means</a> aus der Python Bibliothek scikit-learn verwendet. Diesem unsupervised learning Algorithmus muss die Anzahl der Cluster übergeben werden. Eine
+					Möglichkeit wäre, Plots für verschiedene Clusteranzahlen darzustellen und visuell zu entscheiden, welche Anzahl an Clustern optimal aussieht. Eine andere und etwas genauere Methode ist die so genannte <a
+					  href="https://predictivehacks.com/k-means-elbow-method-code-for-python/">Elbow Methode</a>. Jedes Cluster wird ein Zentrum haben. Um die Güte des Clusterings zu bestimmen, kann die mittlere Entfernung aller Datenpunkte zu ihrem Zentrum
+					berechnet werden. Je näher die Datenpunkte am Zentrum ihres Clusters liegen, desto genauer ist das Clustering. Allerdings sollen in diesem Projekt übergeordnete Zusammenhänge gefunden werden und ein zu enges Clustering ist nicht zielführend.
+					An diesem Punkt wird die Elbow Methode relevant. Sie besagt, dass der Wert als optimale Anzahl an Clustern angenommen werden kann, an dem der Fehler nicht mehr weiter stark abfällt (und der „Ellbogen“ der Fehlerkurve erreicht ist). Der Fehler
+					wird in diesem Fall berechnet, indem der Abstand zwischen jedem Datenpunkt und seinem Zentrum gemessen und quadriert wird und die Quadrate über ein Cluster summiert werden. Folgende Grafik stellt den Fehler auf der y-Achse über verschiedene
+					Clusteranzahlen auf der x-Achse dar.
+					</p>
+
+
+			</div>
+		</div>
+
+		<div class="elbow-box">
+			<div class="elbow">
+			        <img class="img-plot" src="Elbow-Methode.jpg" alt="Elbow-Methode">
+
+			</div>
+		</div>
+
+		<div class="telbow-box">
+			<div class="telbow">
+			        <p>Zu erkennen ist, dass der Fehler nach einer Größe von vier Clustern zwar weiter abnimmt, aber nicht mehr stark fällt. Deshalb wird eine Clustergröße von vier als optimal angenommen.
+						Damit kann der der <a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html">KMeans Cluster Algorithmus</a> durchlaufen werden. Angewandt auf die zuvor erhobenen <a href="final_dataframe.csv">Daten</a> über alle
+						U-Bahnhöfe ergibt sich folgende Verteilung über die Cluster 0-3.
+					</p>
+			</div>
+		</div>
+
+		<div class="boxplot-box">
+			<div class="boxplot">
+			  <img class="img-plot" src="countplot_cluster.jpg" alt="countplot_cluster">
+			 <br>
+			  <p>Cluster 0 hat eine Größe von 21 Stationen, Cluster 1 von 46, Cluster 2 von 61 und Cluster 3 von 41 Stationen. Damit liegen nun sowohl die mittleren Farbwerte als auch die Clusterzuordnung für alle Stationen vor.</p>
+
+			</div>
+		</div>
+
+		<div class="tscatter-box">
+			<div class="tscatter">
+			     <h3>Visualisierung</h3>
+					<p>Wie stellen sich die Datenpunkte und Cluster entlang der drei Dimensionen der Farbwerte dar? Der folgende dreidimensionale Scatterplot soll das verdeutlichen, wobei die mittleren Werte für R, G und B auf den drei Achsen abgetragen sind und
+					die unterschiedlichen Farben die vier Cluster darstellen.
+					</p>
+
+			</div>
+		</div>
+
+		<div class="scatter-box">
+			<div class="scatter">
+			  <img class="img-plot" src="scatterplot_cluster.jpg" alt="scatterplot_cluster">
+			</div>
+		</div>
+
+		<div class="tDscatter-box">
+			<div class="tDscatter">
+			  <p>Bei einer großen Menge an Datenpunkten und der Dreidimensionalität, stößt diese statische Darstellung schnell an Grenzen und droht unübersichtlich zu werden. Zudem interessieren eventuell auch die Stationsnamen und konkrete Werte zu den
+				einzelnen Datenpunkten. Deshalb eignet sich ein interaktiver Plot besser. Der folgende interaktive <a href="https://plotly.com/python-api-reference/generated/plotly.express.scatter_3d.html">Scatterplot</a> ermöglicht unter anderem das Herein-
+				und Herauszoomen und Rotationen um die Achsen. Zudem sind die Datenpunkte mit dem jeweiligen Stationsnamen verknüpft und werden bei der Auswahl der Datenpunkte dargestellt.</p>
+
+			</div>
+		</div>
+
+		<div class="Dscatter-box">
+			<div class="Dscatter">
+
+			  <iframe class="plotly3D-scatter" src="interactive_plot.html"></iframe>
+
+			</div>
+		</div>
+
+		<div class="tgallery-box">
+			<div class="tgallery">
+
+
+			    <p>Was bedeutet das konkret? Zu erkennen ist beispielsweise, dass die U-Bahnhöfe Jannowitzbrücke, Ullsteinstraße, Möckernbrücke und Rosenthaler Platz einen ähnlichen mittleren Farbwert haben (Cluster 0). Die Daten weisen mittlere bis hohe Werte für R und G
+        und geringe Werte für B auf. Ein Blick auf die zugrundeliegenden Fotos bestätigt das. Diese U-Bahnhöfe verbindet ein gelbliches Farblayout.</p>
+
+			</div>
+		</div>
+
+		<div class="gallery-box">
+			<div class="gallery">
+
+
+
+
+							  <div class="container">
+								<div class="row">
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U8\Jannowitzbrücke.jpg" alt="Jannowitzbrücke">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U6\Ullsteinstraße.jpeg" alt="Ullsteinstraße">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U7\Möckernbrücke U7.jpg" alt="Möckernbrücke">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U8\Rosenthaler Platz.jpg" alt="Rosenthaler Platz">
+								  </div>
+								</div>
+							  </div>
+
+							  <!-- Cluster 1 -->
+							  <br>
+							  <p>Exemplarisch für Cluster 1 stehen die U-Bahnhöfe Turmstraße, Alexanderplatz, Amrumer Straße und Rehberge.</p>
+
+							  <div class="container">
+								<div class="row">
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U9\Turmstraße.JPG" alt="Turmstraße">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U8\Alexanderplatz.jpg" alt="Alexanderplatz">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U9\Amrumer Straße.JPG" alt="Amrumer Straße">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U6\Rehberge.JPG" alt="Rehberge">
+								  </div>
+								</div>
+							  </div>
+
+							  <!-- Cluster 2 -->
+							  <br>
+							  <p>Für Cluster 2 verdeutlichen die Stationen Heidelberger Platz, Bernauer Straße, Breitenbachplatz und Hausvogteiplatz die Gemeinsamkeiten.</p>
+
+							  <div class="container">
+								<div class="row">
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U3\Heidelberger Platz.JPEG" alt="Heidelberger Platz">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U8\Bernauer Straße.jpg" alt="Bernauer Straße">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U3\Breitenbachplatz.JPEG" alt="Breitenbachplatz">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U2\Hausvogteiplatz.jpg" alt="Hausvogteiplatz">
+								  </div>
+								</div>
+							  </div>
+
+							  <!-- Cluster 3 -->
+							  <br>
+							  <p>Erstaunlicherweise hat der Algorithmus auch bei komplexen Designs Gemeinsamkeiten finden können. Deutlich wird das für die Stationen Wittenau, Richard-Wagner-Platz, Wilmersdorfer Strasse und Rohrdamm im Cluster 3.</p>
+
+							  <div class="container">
+								<div class="row">
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U8\Wittenau.jpg" alt="Wittenau">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U7\Richard Wagner Platz.JPG" alt="Richard Wagner Platz">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U7\Wilmersdorfer Straße.JPG" alt="Wilmersdorfer Straße">
+								  </div>
+								  <div class="col-sm">
+									<img class="img_vergleich" src="Bilder_final\U7\Rohrdamm.JPG" alt="Rohrdamm">
+								  </div>
+								</div>
+							  </div>
+
+
+			</div>
+		</div>
+
+
+
+
+		<div class="material-box">
+			<div class="material">
+
+			  <h2>Kritische Reflexion</h2>
+			  <p>Abschließend bleibt festzuhalten, dass das hier vorgestellte Clustering einen guten ersten Überblick zu ähnlichen Farblayouts der Berliner U-Bahnhöfe gibt. Mit dem interaktiven dreidimensionalen Plot sind diese Daten zudem übersichtlich und
+				verständlich dargestellt worden. Einige als ähnlich eingestufte Stationen wurden bereits vorgestellt. Bei weiteren Betrachtungen des Scatterplots und den zugrundeliegenden Bildern, können weitere ähnliche Designs festgestellt werden.
+				Insgesamt scheint das Clustering zu guten Ergebnissen geführt zu haben. Auch gemessen an den Anforderungen an das Projekt kann ein positives Fazit gezogen werden.
+				<br>
+				<br>
+				Allerdings soll auch auf einige Limitationen dieses Vorgehens hingewiesen werden. Zum einen wurde die Anzahl der gewählten Cluster mit der Elbow Methode zwar begründet, eine andere Wahl wäre aber möglich. Außerdem war es eine Herausforderung vergleichbare Fotos in
+				Bezug auf Winkel, Schärfe und Beleuchtung über alle Stationen zu finden. Kritisch ist auch, dass nicht alle Fotos eine identische Anzahl an Pixel haben. Des Weiteren lagen nicht zu allen Bahnhöfen Fotos vor. Zu guter Letzt ist die Reduktion allein auf den mittleren Farbwert für dieses Projekt angemessen, stellt insgesamt aber eine starke Vereinfachung dar, wenn ein Designkonzept beurteilt oder verglichen werden soll. Kunst- oder
+				Designaffine Menschen werden wahrscheinlich auch andere Muster, die über den mittleren Farbwert hinaus gehen, in den Berliner U-Bahnhöfen erkennen und die Stationen eventuell abweichend clustern. Deshalb wäre eine interessante Erweiterung des
+				Projektes, ein Clustering durch Kunststudierende durchzuführen und einen Vergleich zwischen dem hier dargestellten datengestützten und dem künstlerischen Clustering zu ziehen.
+			  </p>
+
+			  <br>
+
+			  <h2>Material</h2>
+			  <p>Im Sinne des Opensource-Ansatzes dieses Projektes, können über die folgenden Buttons die Quellen unserer Analyse eingesehen werden. Der Sourcecode stellt den Pythoncode für die Analyse dar, über Dataframe kann der erstellte Datensatz
+        eingesehen und heruntergeladen werden. Images listet die für die Analyse verwendeten Bilder auf.</p>
+
+			</div>
+		</div>
+
+		<div class="dbuttons-box">
+			<div class="download-buttons">
+
+
+				<a class="btn btn-outline-dark" href="DST_Projekt.html" role="button">Sourcecode</a>
+				<a class="btn btn-outline-dark" href="final_dataframe.csv" role="button">Data Frame</a>
+				<a class="btn btn-outline-dark" href="Bilder_final" role="button">Images</a>
+
+
+			</div>
+		</div>
+
+	</div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="my-footer">
+    <p style="padding-top: 3.2rem;">© Tobias & Nina</p>
+  </footer>
+
+
+
+</body>
+
+</html>

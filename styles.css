@@ -1,0 +1,384 @@
+/* elements */
+/* img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+} */
+
+a {
+    color: #f0d722;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+
+/* classes */
+.container-fluid{
+  /* top&buttom rechts&links */
+  padding: 0;
+  margin: auto;
+}
+
+.intro{
+	max-width: 75%;
+	position: center;
+	margin: auto;
+}
+.intro-box{
+	background-color: #f0d722;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.grid-box{
+	background-color: #ffffff;
+	
+}
+.grid{
+	background-color: #ffffff;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.carousel-box{
+	background-color: #ffffff;
+	
+}
+.carousel{
+	background-color: #ffffff;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.carousel-inner{
+	
+	border-radius: 5%;
+	
+}
+
+.tcount-box{
+	background-color: #474747
+	/*background-image: linear-gradient(90deg,#858585, #474747, #858585);*/
+	
+}
+.tcount{
+	/*background-color: #474747;*/
+	color: white;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.count-box{
+	background-color: #ffffff;
+	
+}
+.count{
+	background-color: #ffffff;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+
+.tboxplot-box{
+	background-color: #474747;
+	
+}
+.tboxplot{
+	color: white;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	
+}
+
+
+.telbow-box{
+	background-color: #ffffff;
+	
+}
+.telbow{
+	/*color: white;*/
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	
+}
+
+
+
+.elbow-box{
+	background-color: #ffffff;
+	
+}
+.elbow{
+	background-color: #ffffff;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	
+}
+
+.boxplot-box{
+	background-color: #ffffff;
+	
+}
+.boxplot{
+	background-color: #ffffff;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	
+}
+
+
+.tscatter-box{
+	background-color: #474747;
+	
+}
+.tscatter{
+	color: white;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.scatter-box{
+	background-color: #ffffff;
+	
+}
+.scatter{
+	background-color: #ffffff;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.tDscatter-box{
+	background-color: #474747;
+	
+}
+.tDscatter{
+	color: white;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+.Dscatter-box{
+	background-color: #ffffff;
+	
+}
+.Dscatter{
+	
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.tgallery-box{
+	background-color: #474747;
+	
+}
+.tgallery{
+	color: white;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.gallery-box{
+	background-color: #ffffff;
+	
+}
+.gallery{
+	background-color: #ffffff;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	text-align:center;
+	
+}
+
+.material-box{
+	background-color: #474747;
+	
+}
+.material{
+	color: white;
+	margin: auto;
+	max-width: 75%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+
+.dbuttons-box{
+	background-color: #ffffff;
+	background-color: #f0d722;
+	padding-top: 3%;
+	padding-bottom:3%;
+
+}
+.download-buttons{
+  text-align: center;
+ 
+}
+
+
+/* .navbar-brand{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+.navbar-toggler{
+  border-color: white;
+ 
+} */
+
+
+.img_vergleich{
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+
+
+.img-plot{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-intro{
+  margin: auto;
+  height: 200px;
+  width: 200px;
+}
+
+.plotly3D-scatter{
+  border: none;
+  width: 100%;
+  height: 750px;
+}
+
+.my-footer{
+  background-color: black;
+  color: white;
+  height: 6rem;
+  text-align: center;
+}
+
+
+.btn{
+  width: 10rem;
+  background-color: white;
+  
+}
+
+/* ID */
+#title{
+  background-color: black;
+  
+
+}
+
+	
+@media only screen and (max-width: 600px) {
+	.contentcontainer_mobile
+	{
+		position: absolute;
+		top: 25px;
+		width: 100%;
+		margin: 0px;
+		text-align: center;
+		z-index: 10;
+	}
+}
+
+
+@media only screen and (min-width: 600px) {
+	.contentcontainer
+	{
+		position: absolute;
+		top: 25px;
+		width: 70%;
+		margin-left: 15%;
+		text-align: center;
+		z-index: 10;
+	}
+}
+
+
+/* Image Gallery */
+
+.row {
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px; 
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0px; 
+	
+}
+
+.column img {
+	width:200px;
+	height:200px;
+	object-fit:cover;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+		
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+		
+	}
+}
